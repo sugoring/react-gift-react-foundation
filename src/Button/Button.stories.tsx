@@ -14,3 +14,15 @@ export const Default = Template.bind({})
 Default.args = {
   children: 'Default Button', // 버튼의 기본 텍스트 설정
 }
+
+export const Primary = Template.bind({})
+Primary.args = {
+  theme: 'primary', // Primary 테마 설정
+  children: 'Primary Button',
+}
+
+export const Secondary = Template.bind({})
+Secondary.args = {
+  theme: 'secondary', // Secondary 테마 설정
+  children: 'Secondary Button',
+}
