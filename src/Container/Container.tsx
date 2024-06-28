@@ -1,7 +1,8 @@
 import React, { ReactNode } from 'react'
 import styled from 'styled-components'
 
-interface ContainerProps {
+export interface ContainerProps {
+  // export 추가
   padding?: string
   maxWidth?: string
   children: ReactNode // children 속성을 추가합니다.

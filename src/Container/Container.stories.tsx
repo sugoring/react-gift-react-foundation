@@ -1,6 +1,6 @@
 import React from 'react'
 import { StoryFn, Meta } from '@storybook/react'
-import Container, { ContainerProps } from './Container'
+import Container, { ContainerProps } from './Container' // ContainerProps 가져오기
 
 export default {
   title: 'Components/Container',
