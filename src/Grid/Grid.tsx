@@ -1,10 +1,10 @@
 import React, { ReactNode } from 'react'
 import styled from 'styled-components'
 
-interface GridProps {
+export interface GridProps {
   columns: number
   gap: string
-  children: ReactNode // children 속성을 ReactNode로 변경
+  children: ReactNode
 }
 
 const StyledGrid = styled.div<GridProps>`

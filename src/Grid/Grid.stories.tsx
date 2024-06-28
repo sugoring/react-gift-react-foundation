@@ -1,13 +1,13 @@
 import React from 'react'
 import { StoryFn, Meta } from '@storybook/react'
-import Grid from './Grid'
+import Grid, { GridProps } from './Grid'
 
 export default {
   title: 'Components/Grid',
   component: Grid,
 } as Meta
 
-const Template: StoryFn = args => (
+const Template: StoryFn<GridProps> = args => (
   <Grid {...args}>
     <div style={{ backgroundColor: 'lightgray', height: '100px' }}>{'Item 1'}</div>
     <div style={{ backgroundColor: 'lightgray', height: '100px' }}>{'Item 2'}</div>
