@@ -4,7 +4,7 @@ import styled from 'styled-components'
 interface GridProps {
   columns: number
   gap: string
-  children: ReactNode
+  children: ReactNode // children 속성 추가
 }
 
 const StyledGrid = styled.div<GridProps>`
