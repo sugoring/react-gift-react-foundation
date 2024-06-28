@@ -1,15 +1,49 @@
 import React from 'react'
-import { Meta, StoryFn } from '@storybook/react'
-import Input from './Input'
+import { Meta, Story } from '@storybook/react'
+import Input, { InputProps } from './Input'
 
 export default {
   title: 'Components/Input',
   component: Input,
-} as Meta<typeof Input>
+  argTypes: {
+    disabled: { control: 'boolean' },
+    invalid: { control: 'boolean' },
+    size: {
+      control: { type: 'select', options: ['small', 'medium', 'large', 'responsive'] },
+    },
+  },
+} as Meta
 
-const Template: StoryFn<typeof Input> = args => <Input {...args} />
+const Template: Story<InputProps> = args => <Input {...args} />
 
 export const Default = Template.bind({})
 Default.args = {
-  // 적절한 기본 props를 여기다 설정
+  disabled: false,
+  invalid: false,
+  size: 'medium',
+  placeholder: 'Enter text...',
+}
+
+export const Disabled = Template.bind({})
+Disabled.args = {
+  disabled: true,
+  invalid: false,
+  size: 'medium',
+  placeholder: 'Disabled input',
+}
+
+export const Invalid = Template.bind({})
+Invalid.args = {
+  disabled: false,
+  invalid: true,
+  size: 'medium',
+  placeholder: 'Invalid input',
+}
+
+export const Responsive = Template.bind({})
+Responsive.args = {
+  disabled: false,
+  invalid: false,
+  size: 'responsive',
+  placeholder: 'Responsive input',
 }
