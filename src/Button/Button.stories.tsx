@@ -2,7 +2,6 @@ import React from 'react'
 import { StoryFn, Meta } from '@storybook/react'
 import Button, { ButtonProps } from './Button'
 
-// Storybook 설정
 export default {
   title: 'Components/Button',
   component: Button,

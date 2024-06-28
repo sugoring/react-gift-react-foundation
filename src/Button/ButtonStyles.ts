@@ -1,9 +1,9 @@
 import styled, { css } from 'styled-components'
+import { ButtonProps } from './Button'
 
-export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  theme?: 'primary' | 'secondary'
-  size?: 'small' | 'medium' | 'large' | 'responsive'
-}
+const primaryColor = '#FEE500'
+const secondaryColor = '#61DAFB'
+const textColor = '#FFF'
 
 export const StyledButton = styled.button<ButtonProps>`
   padding: 10px 20px;
@@ -12,19 +12,18 @@ export const StyledButton = styled.button<ButtonProps>`
   cursor: pointer;
   font-size: 16px;
   font-weight: bold;
+  color: ${textColor};
 
   ${({ theme }) =>
     theme === 'primary' &&
     css`
-      background-color: #fee500;
-      color: #191919;
+      background-color: ${primaryColor};
     `}
 
   ${({ theme }) =>
     theme === 'secondary' &&
     css`
-      background-color: gray;
-      color: black;
+      background-color: ${secondaryColor};
     `}
 
   ${({ size }) =>
@@ -59,6 +58,6 @@ export const StyledButton = styled.button<ButtonProps>`
 
   &:hover {
     background-color: ${({ theme }) =>
-      theme === 'primary' ? '#FDDC00' : theme === 'secondary' ? '#bfbfbf' : 'initial'};
+      theme === 'primary' ? '#FDDC00' : theme === 'secondary' ? '#59C4E6' : 'initial'};
   }
 `
