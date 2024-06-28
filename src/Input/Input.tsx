@@ -1,14 +1,9 @@
-import React, { InputHTMLAttributes } from 'react'
-import './Input.css'
+import React from 'react'
 
-interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
-  disabled?: boolean
-  invalid?: boolean
-  size?: 'small' | 'medium' | 'large' | 'responsive'
-}
+export type InputProps = React.InputHTMLAttributes<HTMLInputElement>
 
-const Input: React.FC<InputProps> = ({ disabled, invalid, size = 'medium', ...props }) => {
-  return <input className={`input ${size} ${invalid ? 'invalid' : ''}`} disabled={disabled} {...props} />
+const Input: React.FC<InputProps> = props => {
+  return <input {...props} />
 }
 
 export default Input
