@@ -43,7 +43,7 @@ export const RankingBadge = styled.div<{ rank: number }>`
   left: 8px;
   background-color: ${({ rank }) => (rank <= 3 ? '#fd7364' : '#bbb')};
   color: white;
-  border-radius: 50%;
+  border-radius: 30%;
   width: 28px;
   height: 28px;
   display: flex;
