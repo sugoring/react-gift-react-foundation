@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { ReactNode } from 'react'
 import styled from 'styled-components'
 
 interface GridProps {
   columns: number
   gap: string
+  children: ReactNode
 }
 
 const StyledGrid = styled.div<GridProps>`
