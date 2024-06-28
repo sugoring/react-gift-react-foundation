@@ -72,6 +72,7 @@
     "eslint-plugin-storybook": "^0.8.0",
     "prettier": "^3.3.2",
     "prop-types": "^15.8.1",
+    "sb": "^8.1.11",
     "storybook": "^8.1.11",
     "tsconfig-paths-webpack-plugin": "^4.1.0",
     "webpack": "^5.92.1"
