@@ -1,24 +1,11 @@
-import React, { ReactNode } from 'react'
-import styled from 'styled-components'
+import React from 'react'
 
-export interface GridProps {
-  columns: number
-  gap: string
-  children: ReactNode
+export type GridProps = {
+  children: React.ReactNode
 }
 
-const StyledGrid = styled.div<GridProps>`
-  display: grid;
-  grid-template-columns: repeat(${props => props.columns}, 1fr);
-  gap: ${props => props.gap};
-`
-
-const Grid: React.FC<GridProps> = ({ columns, gap, children }) => {
-  return (
-    <StyledGrid columns={columns} gap={gap}>
-      {children}
-    </StyledGrid>
-  )
+const Grid: React.FC<GridProps> = ({ children }) => {
+  return <div>{children}</div>
 }
 
 export default Grid
