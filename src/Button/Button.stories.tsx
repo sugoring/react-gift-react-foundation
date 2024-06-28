@@ -4,43 +4,43 @@ import Button, { ButtonProps } from './Button'
 
 // Storybook 설정
 export default {
-  title: 'Components/Button', // 스토리의 제목
-  component: Button, // 사용할 컴포넌트
+  title: 'Components/Button',
+  component: Button,
 } as Meta
 
 const Template: StoryFn<ButtonProps> = args => <Button {...args} />
 
 export const Default = Template.bind({})
 Default.args = {
-  children: 'Default Button', // 버튼의 기본 텍스트 설정
+  children: 'Default Button',
 }
 
 export const Primary = Template.bind({})
 Primary.args = {
-  theme: 'primary', // Primary 테마 설정
+  theme: 'primary',
   children: 'Primary Button',
 }
 
 export const Secondary = Template.bind({})
 Secondary.args = {
-  theme: 'secondary', // Secondary 테마 설정
+  theme: 'secondary',
   children: 'Secondary Button',
 }
 
 export const Large = Template.bind({})
 Large.args = {
-  size: 'large', // Large 사이즈 설정
+  size: 'large',
   children: 'Large Button',
 }
 
 export const Small = Template.bind({})
 Small.args = {
-  size: 'small', // Small 사이즈 설정
+  size: 'small',
   children: 'Small Button',
 }
 
 export const Responsive = Template.bind({})
 Responsive.args = {
-  size: 'responsive', // Responsive 사이즈 설정
+  size: 'responsive',
   children: 'Responsive Button',
 }

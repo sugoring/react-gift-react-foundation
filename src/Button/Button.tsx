@@ -1,9 +1,9 @@
 import React from 'react'
 import styled, { css } from 'styled-components'
 
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   theme?: 'primary' | 'secondary'
-  size?: 'small' | 'medium' | 'large' | 'responsive' // responsive 속성 추가
+  size?: 'small' | 'medium' | 'large' | 'responsive'
 }
 
 const StyledButton = styled.button<ButtonProps>`
