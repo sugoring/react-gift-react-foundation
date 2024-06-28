@@ -15,29 +15,29 @@ Default.args = {
   alt: 'Default Image',
 }
 
-export const Ratio16by9 = Template.bind({})
-Ratio16by9.args = {
+export const Ratio = Template.bind({})
+Ratio.args = {
   src: 'https://via.placeholder.com/300',
   alt: '16:9 Image',
-  ratio: '16/9',
+  ratio: 16 / 9,
 }
 
-export const Square = Template.bind({})
-Square.args = {
+export const RatioSquare = Template.bind({})
+RatioSquare.args = {
   src: 'https://via.placeholder.com/300',
   alt: 'Square Image',
   ratio: 'square',
 }
 
-export const RoundedCorners = Template.bind({})
-RoundedCorners.args = {
+export const Radius = Template.bind({})
+Radius.args = {
   src: 'https://via.placeholder.com/300',
   alt: 'Rounded Image',
   radius: 20,
 }
 
-export const Circle = Template.bind({})
-Circle.args = {
+export const RadiusCircle = Template.bind({})
+RadiusCircle.args = {
   src: 'https://via.placeholder.com/300',
   alt: 'Circle Image',
   radius: 'circle',

@@ -1,13 +1,14 @@
 import styled, { css } from 'styled-components'
 
-export const StyledImageWrapper = styled.div<{ ratio?: string }>`
+export const StyledImageWrapper = styled.div<{ ratio?: number | string }>`
   position: relative;
   width: 100%;
   overflow: hidden;
+
   ${({ ratio }) =>
-    ratio === '16/9' &&
+    typeof ratio === 'number' &&
     css`
-      padding-top: 56.25%; /* 16:9 비율 */
+      padding-top: ${100 / ratio}%; /* 주어진 비율에 따라 높이 설정 */
     `}
   ${({ ratio }) =>
     ratio === 'square' &&

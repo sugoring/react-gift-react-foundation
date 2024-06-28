@@ -2,7 +2,7 @@ import React from 'react'
 import { StyledImageWrapper, StyledImage } from './ImageStyles'
 
 export interface ImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
-  ratio?: '16/9' | 'square'
+  ratio?: number | 'square'
   radius?: number | 'circle'
 }
 
