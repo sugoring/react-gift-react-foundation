@@ -59,36 +59,36 @@
 
 ### Button 컴포넌트
 
-- **Theme 설정**
-  - [x] `Theme` Props에 따라 버튼의 색상과 디자인을 다르게 설정합니다.
-- **크기 조정**
-  - [x] `Size` Props에 따라 버튼의 크기를 다르게 조정합니다.
+- **theme**
+  - [x] `Theme` Props에 따라 `Button`의 색상과 디자인을 다르게 설정합니다.
+- **size**
+  - [x] `Size` Props에 따라 `Button`의 크기를 다르게 설정합니다.
   - [x] `value`가 `responsive`인 경우, 미디어 쿼리에 따라 사이즈가 달라지도록 구현합니다.
-- **기본 HTML 속성**
+- **HTMLAttributes**
   - [x] 기본 HTML `Button` 요소의 모든 속성을 사용할 수 있도록 설정합니다.
 
 ### Input 컴포넌트
 
-- **UI 표시**
-  - [x] `disabled` Props에 따라 `Input`을 비활성화하고, UI에서 표시합니다.
-  - [x] `invalid` Props에 따라 잘못된 값이 입력되었음을 UI에서 표시합니다.
-- **크기 조정**
-  - [x] `Size` Props에 따라 `Input`의 크기를 다르게 조정합니다.
+- **set boolean**
+  - [x] `disabled` Props에 따라 `Input`을 비활성화합니다.
+  - [x] `invalid` Props에 따라 `Input`의 색상을 다르게 설정합니다.
+- **size**
+  - [x] `Size` Props에 따라 `Input`의 크기를 다르게 설정합니다.
   - [x] `value`가 `responsive`인 경우, 미디어 쿼리에 따라 사이즈가 달라지도록 구현합니다.
-- **기본 HTML 속성**
+- **HTMLAttributes**
   - [x] 기본 HTML `Input` 요소의 모든 속성을 사용할 수 있도록 설정합니다.
 
 ### Image 컴포넌트
 
-- **`ratio` 설정**
+- **ratio**
   - [x] `ratio` Props에 따라 이미지의 비율을 설정합니다.
-  - [x] `value`가 `number`로 16/9로 설정된 경우 16:9 비율로 보여줍니다.
-  - [x] `value`가 `square`로 설정된 경우 정사각형 비율로 보여줍니다.
-- **`radius` 설정**
-  - [x] `radius` Props에 따라 이미지의 모서리를 둥글게 처리합니다.
-  - [x] `value`가 `number`인 경우 해당 숫자만큼 모서리가 둥글게 적용됩니다.
-  - [x] `value`가 `circle`로 설정된 경우 원형으로 보여줍니다.
-- **기본 HTML 속성**
+  - [x] `value`가 `number`로 16/9로 설정된 경우 16:9 비율로 설정합니다.
+  - [x] `value`가 `square`로 설정된 경우 정사각형 비율로 설정합니다.
+- **radius**
+  - [x] `radius` Props에 따라 이미지의 모서리를 둥글게 설정합니다.
+  - [x] `value`가 `number`인 경우 해당 숫자만큼 모서리를 둥글게 설정합니다.
+  - [x] `value`가 `circle`로 설정된 경우 원형으로 설정합니다.
+- **HTMLAttributes**
   - [x] 기본 HTML `Img` 요소의 모든 속성을 사용할 수 있도록 설정합니다.
 
 ### GoodsItem 컴포넌트
