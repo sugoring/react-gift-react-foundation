@@ -70,47 +70,47 @@
 ### Input 컴포넌트
 
 - **UI 표시**
-  - [ ] `disabled` Props에 따라 `Input`을 비활성화하고, UI에서 표시합니다.
-  - [ ] `invalid` Props에 따라 잘못된 값이 입력되었음을 UI에서 표시합니다.
+  - [x] `disabled` Props에 따라 `Input`을 비활성화하고, UI에서 표시합니다.
+  - [x] `invalid` Props에 따라 잘못된 값이 입력되었음을 UI에서 표시합니다.
 - **크기 조정**
-  - [ ] `Size` Props에 따라 `Input`의 크기를 다르게 조정합니다.
-  - [ ] `value`가 `responsive`인 경우, 미디어 쿼리에 따라 사이즈가 달라지도록 구현합니다.
+  - [x] `Size` Props에 따라 `Input`의 크기를 다르게 조정합니다.
+  - [x] `value`가 `responsive`인 경우, 미디어 쿼리에 따라 사이즈가 달라지도록 구현합니다.
 - **기본 HTML 속성**
-  - [ ] 기본 HTML `Input` 요소의 모든 속성을 사용할 수 있도록 설정합니다.
+  - [x] 기본 HTML `Input` 요소의 모든 속성을 사용할 수 있도록 설정합니다.
 
 ### Image 컴포넌트
 
 - **`ratio` 설정**
-  - [ ] `ratio` Props에 따라 이미지의 비율을 설정합니다.
-  - [ ] `value`가 `number`로 16/9로 설정된 경우 16:9 비율로 보여줍니다.
-  - [ ] `value`가 `square`로 설정된 경우 정사각형 비율로 보여줍니다.
+  - [x] `ratio` Props에 따라 이미지의 비율을 설정합니다.
+  - [x] `value`가 `number`로 16/9로 설정된 경우 16:9 비율로 보여줍니다.
+  - [x] `value`가 `square`로 설정된 경우 정사각형 비율로 보여줍니다.
 - **`radius` 설정**
-  - [ ] `radius` Props에 따라 이미지의 모서리를 둥글게 처리합니다.
-  - [ ] `value`가 `number`인 경우 해당 숫자만큼 모서리가 둥글게 적용됩니다.
-  - [ ] `value`가 `circle`로 설정된 경우 원형으로 보여줍니다.
+  - [x] `radius` Props에 따라 이미지의 모서리를 둥글게 처리합니다.
+  - [x] `value`가 `number`인 경우 해당 숫자만큼 모서리가 둥글게 적용됩니다.
+  - [x] `value`가 `circle`로 설정된 경우 원형으로 보여줍니다.
 - **기본 HTML 속성**
-  - [ ] 기본 HTML `Img` 요소의 모든 속성을 사용할 수 있도록 설정합니다.
+  - [x] 기본 HTML `Img` 요소의 모든 속성을 사용할 수 있도록 설정합니다.
 
 ### GoodsItem 컴포넌트
 
 - **기본 형태**
-  - [ ] `Default` 형태의 `GoodsItem` 컴포넌트를 구현합니다.
+  - [x] `Default` 형태의 `GoodsItem` 컴포넌트를 구현합니다.
 - **랭킹 형태**
-  - [ ] `Ranking` 형태의 `GoodsItem` 컴포넌트를 구현합니다.
+  - [x] `Ranking` 형태의 `GoodsItem` 컴포넌트를 구현합니다.
 - **기본 Props**
-  - [ ] `imageSrc`, `subtitle`, `title`, `amount` Props를 받아서 렌더링합니다.
+  - [x] `imageSrc`, `subtitle`, `title`, `amount` Props를 받아서 렌더링합니다.
 - **랭킹 Props**
-  - [ ] `rankingIndex` Props를 추가로 받습니다.
-  - [ ] 1~3위까지는 분홍색 랭킹 뱃지를 표시합니다.
-  - [ ] 4위 이상은 회색 랭킹 뱃지를 표시합니다.
+  - [x] `rankingIndex` Props를 추가로 받습니다.
+  - [x] 1~3위까지는 분홍색 랭킹 뱃지를 표시합니다.
+  - [x] 4위 이상은 회색 랭킹 뱃지를 표시합니다.
 
 ### Grid 컴포넌트
 
-- [ ] `Grid` 컴포넌트를 구현합니다.
+- [x] `Grid` 컴포넌트를 구현합니다.
 
 ### Container 컴포넌트
 
-- [ ] `Container` 컴포넌트를 구현합니다.
+- [x] `Container` 컴포넌트를 구현합니다.
 
 ---
 
