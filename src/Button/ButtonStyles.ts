@@ -2,8 +2,8 @@ import styled, { css } from 'styled-components'
 import { ButtonProps } from './Button'
 
 const primaryColor = '#FEE500'
-const secondaryColor = '#61DAFB'
-const textColor = '#FFF'
+const secondaryColor = '#4969f0'
+const textColor = '#ffffff'
 
 export const StyledButton = styled.button<ButtonProps>`
   padding: 10px 20px;
@@ -12,18 +12,19 @@ export const StyledButton = styled.button<ButtonProps>`
   cursor: pointer;
   font-size: 16px;
   font-weight: bold;
-  color: ${textColor};
 
   ${({ theme }) =>
     theme === 'primary' &&
     css`
       background-color: ${primaryColor};
+      color: ${textColor};
     `}
 
   ${({ theme }) =>
     theme === 'secondary' &&
     css`
       background-color: ${secondaryColor};
+      color: ${textColor};
     `}
 
   ${({ size }) =>
@@ -58,6 +59,6 @@ export const StyledButton = styled.button<ButtonProps>`
 
   &:hover {
     background-color: ${({ theme }) =>
-      theme === 'primary' ? '#FDDC00' : theme === 'secondary' ? '#59C4E6' : 'initial'};
+      theme === 'primary' ? '#FDDC00' : theme === 'secondary' ? '#3b4bfa' : 'initial'};
   }
 `
