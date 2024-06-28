@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components'
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   theme?: 'primary' | 'secondary'
-  size?: 'small' | 'medium' | 'large' // size 속성 추가
+  size?: 'small' | 'medium' | 'large' | 'responsive' // responsive 속성 추가
 }
 
 const StyledButton = styled.button<ButtonProps>`
@@ -26,7 +26,6 @@ const StyledButton = styled.button<ButtonProps>`
       color: black;
     `}
 
-  // size에 따른 스타일 설정
   ${({ size }) =>
     size === 'small' &&
     css`
@@ -46,6 +45,15 @@ const StyledButton = styled.button<ButtonProps>`
     css`
       font-size: 20px;
       padding: 12px 24px;
+    `}
+
+  ${({ size }) =>
+    size === 'responsive' &&
+    css`
+      width: 100%;
+      @media (min-width: 768px) {
+        width: auto;
+      }
     `}
 `
 
