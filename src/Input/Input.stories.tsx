@@ -31,3 +31,15 @@ Responsive.args = {
   size: 'responsive',
   placeholder: 'Responsive Input',
 }
+
+export const Disabled = Template.bind({})
+Disabled.args = {
+  disabled: true,
+  placeholder: 'Disabled Input',
+}
+
+export const Invalid = Template.bind({})
+Invalid.args = {
+  invalid: true,
+  placeholder: 'Invalid Input',
+}
