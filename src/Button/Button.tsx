@@ -6,6 +6,7 @@ const StyledButton = styled.button`
   padding: 10px 20px; // 버튼의 패딩 설정
   border: none; // 버튼의 테두리 제거
   cursor: pointer; // 버튼 위에 마우스를 올렸을 때 커서 모양 설정
+  font-size: 16px; // 버튼의 폰트 크기 설정
 `
 
 type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement>
