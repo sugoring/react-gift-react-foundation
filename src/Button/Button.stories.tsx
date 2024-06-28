@@ -38,3 +38,9 @@ Small.args = {
   size: 'small', // Small 사이즈 설정
   children: 'Small Button',
 }
+
+export const Responsive = Template.bind({})
+Responsive.args = {
+  size: 'responsive', // Responsive 사이즈 설정
+  children: 'Responsive Button',
+}
