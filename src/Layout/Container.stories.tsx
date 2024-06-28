@@ -1,20 +1,15 @@
 import React from 'react'
-import { StoryFn, Meta } from '@storybook/react'
-import Container, { ContainerProps } from './Container' // ContainerProps 가져오기
+import { Meta, StoryFn } from '@storybook/react'
+import Container, { ContainerProps } from './Container'
 
 export default {
-  title: 'Components/Container',
+  title: 'Layout/Container',
   component: Container,
 } as Meta
 
-const Template: StoryFn<ContainerProps> = args => (
-  <Container {...args}>
-    <div style={{ backgroundColor: 'lightgray', height: '100px' }}>{'Content'}</div>
-  </Container>
-)
+const Template: StoryFn<ContainerProps> = args => <Container {...args} />
 
 export const Default = Template.bind({})
 Default.args = {
-  padding: '16px',
-  maxWidth: '1200px',
+  children: 'This is a container',
 }
