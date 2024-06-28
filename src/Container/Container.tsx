@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { ReactNode } from 'react'
 import styled from 'styled-components'
 
 interface ContainerProps {
   padding?: string
   maxWidth?: string
+  children: ReactNode // children 속성을 추가합니다.
 }
 
 const StyledContainer = styled.div<ContainerProps>`
