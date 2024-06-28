@@ -26,3 +26,15 @@ Secondary.args = {
   theme: 'secondary', // Secondary 테마 설정
   children: 'Secondary Button',
 }
+
+export const Large = Template.bind({})
+Large.args = {
+  size: 'large', // Large 사이즈 설정
+  children: 'Large Button',
+}
+
+export const Small = Template.bind({})
+Small.args = {
+  size: 'small', // Small 사이즈 설정
+  children: 'Small Button',
+}
