@@ -1,15 +1,18 @@
 import React from 'react'
-import { Meta, StoryFn } from '@storybook/react'
-import GoodsItem from './GoodsItem'
+import { StoryFn, Meta } from '@storybook/react'
+import GoodsItem, { GoodsItemProps } from './GoodsItem'
 
 export default {
   title: 'Components/GoodsItem',
   component: GoodsItem,
-} as Meta<typeof GoodsItem>
+} as Meta
 
-const Template: StoryFn<typeof GoodsItem> = args => <GoodsItem {...args} />
+const Template: StoryFn<GoodsItemProps> = args => <GoodsItem {...args} />
 
 export const Default = Template.bind({})
 Default.args = {
-  // 적절한 기본 props를 여기다 설정
+  imageSrc: 'https://via.placeholder.com/150',
+  subtitle: 'Subtitle',
+  title: 'Title',
+  amount: 10000,
 }
