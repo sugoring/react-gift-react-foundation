@@ -20,7 +20,7 @@
   "scripts": {
     "start": "craco start",
     "build": "craco build",
-    "test": "react-scripts test",
+    "test": "craco test",
     "eject": "react-scripts eject",
     "lint": "eslint \"./src/**/*.{ts,tsx,js,jsx}\"",
     "lint:fix": "eslint --fix \"./src/**/*.{ts,tsx,js,jsx}\"",
@@ -71,12 +71,14 @@
     "eslint-plugin-prettier": "^5.1.3",
     "eslint-plugin-react": "^7.34.3",
     "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-spellcheck": "^0.0.20",
     "eslint-plugin-storybook": "^0.8.0",
     "prettier": "^3.3.2",
     "prop-types": "^15.8.1",
     "sb": "^8.1.11",
     "storybook": "^8.1.11",
     "tsconfig-paths-webpack-plugin": "^4.1.0",
+    "typescript": "^4.9.5",
     "webpack": "^5.92.1"
   }
 }

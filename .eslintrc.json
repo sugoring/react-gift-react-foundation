@@ -1,10 +1,7 @@
 {
   "root": true,
   "parser": "@typescript-eslint/parser",
-  "plugins": [
-    "@typescript-eslint",
-    "prettier"
-  ],
+  "plugins": ["@typescript-eslint", "prettier", "spellcheck"],
   "extends": [
     "eslint:recommended",
     "airbnb",
@@ -24,18 +21,10 @@
     "react/jsx-filename-extension": [
       2,
       {
-        "extensions": [
-          ".js",
-          ".jsx",
-          ".ts",
-          ".tsx"
-        ]
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
       }
     ],
-    "arrow-parens": [
-      "warn",
-      "as-needed"
-    ],
+    "arrow-parens": ["warn", "as-needed"],
     "no-unused-vars": "off",
     "no-console": "off",
     "import/prefer-default-export": "off",
@@ -52,10 +41,7 @@
     "react/function-component-definition": [
       2,
       {
-        "namedComponents": [
-          "arrow-function",
-          "function-declaration"
-        ]
+        "namedComponents": ["arrow-function", "function-declaration"]
       }
     ],
     "react/react-in-jsx-scope": 0,
@@ -86,17 +72,19 @@
     "no-use-before-define": 0,
     "import/no-extraneous-dependencies": 0,
     "no-shadow": 0,
-    "jsx-a11y/no-noninteractive-element-interactions": 0
+    "jsx-a11y/no-noninteractive-element-interactions": 0,
+    "spellcheck/spell-checker": [
+      1,
+      {
+        "skipWords": ["craco"],
+        "minLength": 3
+      }
+    ]
   },
   "settings": {
     "import/resolver": {
       "node": {
-        "extensions": [
-          ".js",
-          ".jsx",
-          ".ts",
-          ".tsx"
-        ]
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
       }
     }
   }
