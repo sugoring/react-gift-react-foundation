@@ -81,11 +81,9 @@
 ### Image 컴포넌트
 
 - **ratio**
-  - [x] `ratio` Props에 따라 이미지의 비율을 설정합니다.
-  - [x] `value`가 `number`로 16/9로 설정된 경우 16:9 비율로 설정합니다.
+  - [x] `value`가 `number`로 설정된 경우 해당 비율로 설정합니다.
   - [x] `value`가 `square`로 설정된 경우 정사각형 비율로 설정합니다.
 - **radius**
-  - [x] `radius` Props에 따라 이미지의 모서리를 둥글게 설정합니다.
   - [x] `value`가 `number`인 경우 해당 숫자만큼 모서리를 둥글게 설정합니다.
   - [x] `value`가 `circle`로 설정된 경우 원형으로 설정합니다.
 - **HTMLAttributes**
@@ -93,14 +91,12 @@
 
 ### GoodsItem 컴포넌트
 
-- **기본 형태**
+- **Default**
   - [x] `Default` 형태의 `GoodsItem` 컴포넌트를 구현합니다.
-- **랭킹 형태**
+  - [x] `imageSrc`, `subtitle`, `title`, `amount` Props를 설정합니다.
+- **Ranking**
   - [x] `Ranking` 형태의 `GoodsItem` 컴포넌트를 구현합니다.
-- **기본 Props**
-  - [x] `imageSrc`, `subtitle`, `title`, `amount` Props를 받아서 렌더링합니다.
-- **랭킹 Props**
-  - [x] `rankingIndex` Props를 추가로 받습니다.
+  - [x] `rankingIndex` Props를 추가로 설정합니다.
   - [x] 1~3위까지는 분홍색 랭킹 뱃지를 표시합니다.
   - [x] 4위 이상은 회색 랭킹 뱃지를 표시합니다.
 
