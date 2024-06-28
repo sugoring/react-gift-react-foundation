@@ -9,14 +9,16 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
 const StyledButton = styled.button<ButtonProps>`
   padding: 10px 20px;
   border: none;
+  border-radius: 12px;
   cursor: pointer;
   font-size: 16px;
+  font-weight: bold;
 
   ${({ theme }) =>
     theme === 'primary' &&
     css`
-      background-color: blue;
-      color: white;
+      background-color: #fee500;
+      color: #191919;
     `}
 
   ${({ theme }) =>
@@ -55,6 +57,11 @@ const StyledButton = styled.button<ButtonProps>`
         width: auto;
       }
     `}
+
+  &:hover {
+    background-color: ${({ theme }) =>
+      theme === 'primary' ? '#FDDC00' : theme === 'secondary' ? '#bfbfbf' : 'initial'};
+  }
 `
 
 const Button: React.FC<ButtonProps> = ({ theme, size, ...props }) => {
