@@ -71,4 +71,8 @@ const GoodsItem: React.FC<GoodsItemProps> = ({ imageSrc, subtitle, title, amount
   )
 }
 
+GoodsItem.defaultProps = {
+  rankingIndex: undefined,
+}
+
 export default GoodsItem
