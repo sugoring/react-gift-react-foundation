@@ -28,3 +28,17 @@ Square.args = {
   alt: 'Square Image',
   ratio: 'square',
 }
+
+export const RoundedCorners = Template.bind({})
+RoundedCorners.args = {
+  src: 'https://via.placeholder.com/300',
+  alt: 'Rounded Image',
+  radius: 20,
+}
+
+export const Circle = Template.bind({})
+Circle.args = {
+  src: 'https://via.placeholder.com/300',
+  alt: 'Circle Image',
+  radius: 'circle',
+}
