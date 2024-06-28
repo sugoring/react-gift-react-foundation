@@ -19,6 +19,6 @@
 }
 
 .App-link:hover {
-  color: #FEE500; /* Changing link color to Kakao's yellow */
+  color: #FEE500; 
   text-decoration: underline;
 }
