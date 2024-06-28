@@ -3,6 +3,7 @@ import styled, { css } from 'styled-components'
 
 export interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   size?: 'small' | 'medium' | 'large' | 'responsive'
+  invalid?: boolean
 }
 
 const StyledInput = styled.input<InputProps>`
@@ -41,10 +42,21 @@ const StyledInput = styled.input<InputProps>`
         width: auto;
       }
     `}
+
+  ${({ invalid }) =>
+    invalid &&
+    css`
+      border-color: red;
+    `}
+
+  &:disabled {
+    background-color: #f5f5f5;
+    border-color: #ddd;
+  }
 `
 
-const Input: React.FC<InputProps> = ({ size, ...props }) => {
-  return <StyledInput size={size} {...props} />
+const Input: React.FC<InputProps> = ({ size, invalid, ...props }) => {
+  return <StyledInput size={size} invalid={invalid} {...props} />
 }
 
 Input.defaultProps = {
