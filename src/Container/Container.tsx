@@ -21,4 +21,9 @@ const Container: React.FC<ContainerProps> = ({ padding, maxWidth, children }) =>
   )
 }
 
+Container.defaultProps = {
+  padding: '16px',
+  maxWidth: '1200px',
+}
+
 export default Container

@@ -1,13 +1,13 @@
 import React from 'react'
 import { StoryFn, Meta } from '@storybook/react'
-import Container from './Container'
+import Container, { ContainerProps } from './Container'
 
 export default {
   title: 'Components/Container',
   component: Container,
 } as Meta
 
-const Template: StoryFn = args => (
+const Template: StoryFn<ContainerProps> = args => (
   <Container {...args}>
     <div style={{ backgroundColor: 'lightgray', height: '100px' }}>{'Content'}</div>
   </Container>
