@@ -11,5 +11,14 @@ const Template: StoryFn<GridProps> = args => <Grid {...args} />
 
 export const Default = Template.bind({})
 Default.args = {
-  children: 'This is a grid',
+  children: (
+    <>
+      <div style={{ background: '#ccc', padding: '10px' }}>{'Item 1'}</div>
+      <div style={{ background: '#aaa', padding: '10px' }}>{'Item 2'}</div>
+      <div style={{ background: '#ccc', padding: '10px' }}>{'Item 3'}</div>
+      <div style={{ background: '#aaa', padding: '10px' }}>{'Item 4'}</div>
+      <div style={{ background: '#ccc', padding: '10px' }}>{'Item 5'}</div>
+      <div style={{ background: '#aaa', padding: '10px' }}>{'Item 6'}</div>
+    </>
+  ),
 }
