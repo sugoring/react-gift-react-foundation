@@ -16,3 +16,12 @@ Default.args = {
   title: 'Title',
   amount: 10000,
 }
+
+export const Ranking = Template.bind({})
+Ranking.args = {
+  imageSrc: 'https://via.placeholder.com/150',
+  subtitle: 'Subtitle',
+  title: 'Title',
+  amount: 10000,
+  rankingIndex: 1,
+}
