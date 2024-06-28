@@ -10,8 +10,16 @@ const StyledImageWrapper = styled.div<{ ratio?: string }>`
   position: relative;
   width: 100%;
   overflow: hidden;
-  ${({ ratio }) => ratio === '16/9' && 'padding-top: 56.25%;' /* 16:9 비율 */}
-  ${({ ratio }) => ratio === 'square' && 'padding-top: 100%;' /* 정사각형 비율 */}
+  ${({ ratio }) =>
+    ratio === '16/9' &&
+    css`
+      padding-top: 56.25%; /* 16:9 비율 */
+    `}
+  ${({ ratio }) =>
+    ratio === 'square' &&
+    css`
+      padding-top: 100%; /* 정사각형 비율 */
+    `}
 `
 
 const StyledImage = styled.img<{ radius?: number | string }>`
@@ -40,6 +48,11 @@ const Image: React.FC<ImageProps> = ({ ratio, radius, ...props }) => {
       <StyledImage radius={radius} {...props} />
     </StyledImageWrapper>
   )
+}
+
+Image.defaultProps = {
+  ratio: 'square',
+  radius: 0,
 }
 
 export default Image
