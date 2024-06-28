@@ -1,13 +1,5 @@
-import React from 'react'
-import { Meta, Story } from '@storybook/react'
-import Image from './Image'
+function Image() {
+  console.log('default export 임시 해결')
+}
 
-export default {
-  title: 'Image',
-  component: Image,
-} as Meta
-
-const Template: Story = args => <Image {...args} />
-
-export const Default = Template.bind({})
-Default.args = {}
+export default Image

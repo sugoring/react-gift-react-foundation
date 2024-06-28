@@ -1,13 +1,5 @@
-import React from 'react'
-import { Meta, Story } from '@storybook/react'
-import GoodsItem from './GoodsItem'
+function GoodsItem() {
+  console.log('default export 임시 해결')
+}
 
-export default {
-  title: 'GoodsItem',
-  component: GoodsItem,
-} as Meta
-
-const Template: Story = args => <GoodsItem {...args} />
-
-export const Default = Template.bind({})
-Default.args = {}
+export default GoodsItem
