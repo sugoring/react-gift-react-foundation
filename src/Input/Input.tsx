@@ -1,6 +1,7 @@
 import React from 'react'
 import styled, { css } from 'styled-components'
 
+// 기본 InputHTMLAttributes 인터페이스에서 size 속성을 제거합니다.
 export interface InputProps extends Omit<React.InputHTMLAttributes<HTMLInputElement>, 'size'> {
   size?: 'small' | 'medium' | 'large' | 'responsive'
   invalid?: boolean
@@ -61,6 +62,7 @@ const Input: React.FC<InputProps> = ({ size, invalid, ...props }) => {
 
 Input.defaultProps = {
   size: 'medium',
+  invalid: false,
 }
 
 export default Input
