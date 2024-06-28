@@ -16,19 +16,19 @@ Default.args = {
 
 export const Small = Template.bind({})
 Small.args = {
-  size: 'small',
+  size: 12,
   placeholder: 'Small Input',
 }
 
 export const Large = Template.bind({})
 Large.args = {
-  size: 'large',
+  size: 20,
   placeholder: 'Large Input',
 }
 
 export const Responsive = Template.bind({})
 Responsive.args = {
-  size: 'responsive',
+  size: undefined,
   placeholder: 'Responsive Input',
 }
 
