@@ -1,19 +1,34 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
-// 기본 스타일을 설정한 StyledButton 컴포넌트
-const StyledButton = styled.button`
-  padding: 10px 20px; // 버튼의 패딩 설정
-  border: none; // 버튼의 테두리 제거
-  cursor: pointer; // 버튼 위에 마우스를 올렸을 때 커서 모양 설정
-  font-size: 16px; // 버튼의 폰트 크기 설정
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  theme?: 'primary' | 'secondary' // theme 속성 추가
+}
+
+const StyledButton = styled.button<ButtonProps>`
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+
+  // theme에 따른 스타일 설정
+  ${({ theme }) =>
+    theme === 'primary' &&
+    css`
+      background-color: blue;
+      color: white;
+    `}
+
+  ${({ theme }) =>
+    theme === 'secondary' &&
+    css`
+      background-color: gray;
+      color: black;
+    `}
 `
 
-type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement>
-
-// 기본 Button 컴포넌트
-const Button: React.FC<ButtonProps> = props => {
-  return <StyledButton {...props} /> // StyledButton 컴포넌트를 반환
+const Button: React.FC<ButtonProps> = ({ theme = 'primary', ...props }) => {
+  return <StyledButton theme={theme} {...props} />
 }
 
 export default Button
